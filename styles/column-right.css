@@ -1,0 +1,83 @@
+.column-right {
+    float: right;
+
+    width: 470px;
+}
+
+.right-form {
+    padding: 30px 40px 36px;
+    background-color: #fff;
+}
+
+.label-text {
+    display: block;
+    margin: 0 0 30px;
+}
+
+.span-text {
+    position: relative;
+    padding: 0 0 0 12px;
+
+    color: #8993ad;
+}
+
+.input-text {
+    margin: 7px 0 0;
+
+    width: 390px;
+    min-height: 45px;
+
+    background-color: #fcfcfc;
+    border: 1px solid #ebebeb;
+}
+
+.label-textarea {
+    display: block;
+    margin: 0 0 25px;                
+}
+
+.span-textarea {
+    position: relative;
+    padding: 0 0 0 12px;
+
+    color: #8993ad;
+}
+
+.span-textarea::before,
+.span-text::before {
+    position: absolute;
+
+    top: -4px;
+    left: 0;
+                
+    content: "*";           
+}
+
+.input-textarea {
+    margin: 7px 0 0;
+
+    width: 390px;
+    min-height: 230px;
+    resize: none;
+
+    background-color: #fcfcfc;
+    border: 1px solid #f6f6f6;
+}
+
+.button-add {
+    padding: 18px 10px 19px;
+    width: 224px;
+
+    background-color: #2174fd;
+    border: 0;
+
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Добавил класс Ошибка для формы
+.error-add-case {
+    border: 1px solid red !important;
+}*/
+
+

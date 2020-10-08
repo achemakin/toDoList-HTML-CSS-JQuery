@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <title> Список дел </title>
+        
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/column-left.css">
+        <link rel="stylesheet" href="styles/column-right.css">
+
+        <script defer src="script/jquery-3.4.1.js"></script>
+        <script defer src="script/script.js"></script>                     
+    </head>
+    
+    <body>
+        <main class="main">
+            <div class="container">
+                <h1 class="visually-hidden">Дела</h1>
+                
+                <section class="column-left">
+                    <h2 class="left-h2">Список дел:</h2>
+                    
+                    <!-- Добавил p  для надписи "список пуст..."-->
+                    <p class="p-null" id="js-case-empty">Список пуст...</p>
+                                       
+                    <ul class="left-ul" id="js-case-ul"></ul>
+                </section>
+
+                <section class="column-right">
+                    <h2 class="right-h2">Добавить новое дело</h2>
+
+                    <form class="right-form" id="js-form-input-case">
+                        <label class="label-text"> 
+                            <!-- Добавил span  для позиционирования-->
+                            <span class="span-text">Название</span>
+                            <input class="input-text" id="js-head-case" type="text" name="title" required>                            
+                        </label>
+
+                        <label class="label-textarea"> 
+                            <!-- Добавил span  для позиционирования-->
+                            <span class="span-textarea">Описание</span>
+                            
+                            <textarea class="input-textarea" id="js-description-head" name="description" required></textarea>
+                        </label>
+
+                        <button class="button-add" id="js-btn-add" type="submit">Добавить дело</button>
+                    </form>
+                </section>                
+            </div>
+        </main>
+    </body>
+</html>

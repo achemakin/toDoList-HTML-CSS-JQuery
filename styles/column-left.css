@@ -1,0 +1,141 @@
+.column-left {
+    position: relative;
+    float: left;
+    width: 470px;
+}
+
+.left-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.left-li {
+    display: block;
+    margin: 0 0 20px;
+
+    background-color: #fff;
+}
+
+.left-articl {
+    padding: 0;
+}
+
+.left-header {
+    overflow: hidden;
+
+    margin: 0 0 7px;
+    padding: 16px 17px 14px 20px;
+
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.left-h3 {
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    max-width: 350px;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.button-remove {
+    float: left;
+    margin: 0 0 0 16px;
+    padding: 0;
+    
+    height: 20px;
+    width: 20px;
+    
+    border: 0;
+    background: url("../img/clear-button.png") 50% no-repeat;
+}
+
+/* добавил стили для анимации стрелки */ 
+.button-arrow,
+.arrow-animation-right,
+.arrow-animation-down {                                                      
+    float: right;
+    margin: 0; 
+    padding: 0;
+    
+    height: 20px;
+    width: 20px;
+    
+    border: 0;
+    background: url("../img/arrow-down.png") 50% no-repeat;
+}
+
+.arrow-animation-right {
+    animation-name: arrowRight;
+    -webkit-animation-name: arrowRight;
+    animation-duration: 450ms;
+    -webkit-animation-duration: 450ms;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+.arrow-animation-down {
+    animation-name: arrowDown;
+    -webkit-animation-name: arrowDown;
+    animation-duration: 450ms;
+    -webkit-animation-duration: 450ms;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes arrowRight {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes arrowRight {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+@-webkit-keyframes arrowDown {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes arrowDown {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+.left-p {
+    margin: 0 20px;
+    padding: 0 0 62px;
+    color: #8993ad;    
+}
+
+.p-null {
+    position: absolute;
+    z-index: -10;
+
+    margin: 44px 0 0;
+
+    font-size: 16px;
+    color: #8993ad;
+}
+

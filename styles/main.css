@@ -1,0 +1,11 @@
+.main {
+    margin-top:61px;
+}
+
+.left-h2,
+.right-h2 {
+	margin: 0 0 29px;
+
+	font-size: 21px;
+	font-weight: normal;
+}
